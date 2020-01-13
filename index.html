@@ -1,0 +1,163 @@
+<!-- CptS 489, Spring 2020
+     Project: W01C1
+     File: index.html
+     This file defines a skeleton web app that includes 
+       --a fixed top bar with hamburger menu icon, app icon and page title
+       --a fixed bottom bar that shows the current app mode
+       --a side menu that expands/contracts to show current menu items
+     This skeleton uses two CSS libraries: FontAwesome and BootStrap.
+     Feel free to download this file and use it to follow along in class.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Begin HEAD section of document. Here we must use HTML comments as shown here. -->
+    <!-- Default target for all hyperlinks in this file: https://www.w3schools.com/tags/att_base_target.asp -->
+    <base target="_top"> 
+    <!-- Provide metadata on this file. Can be used by browsers, search engines, etc. -->
+    <meta charset="utf-8">
+    <!-- HTML5 method that specifies viewable part of page ('viewport'). Always use the following,
+         which sets the width of the page to the width of the device and scales page content to fit into page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import External stylesheets and libraries using 'CDN' (content delivery network) links: -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Our local CSS stylesheet -->
+    <link rel="stylesheet" href = "styles/navbar.css">
+
+</head>
+ 
+<body>
+  <!-- Begin the BODY section of the document.  -->
+  
+  <!-- Fixed menu and button content goes here to define app structure: the top bar,
+       the side menu, the bottom bar, and the floating contextual action button  -->
+  <div id="navBar" class="navbar">
+
+      <span class="navbarItems">
+        <button id="menuBtn" style="background-color: transparent; 
+        border-color:#13294E; text-align: center">
+          <span id="menuBtnIcon" class="fas fa-bars" style="color:white; 
+          font-size: 30px; cursor:pointer; text-align: center">
+  
+          </span>
+        </button>
+        <img src="http://tiny.cc/sslogo" alt="Speed Score Logo" height="38px" width="38px">
+        <span id="topBarTitle" style="color:white; font-size: 18px">
+          Activity Feed</span>
+      </span>
+   
+  </div>
+  <div id="sideMenu" class="sidenav">
+       <!--SIDE MENU TITLE -->
+        <div class="sidenavtitle">
+          <img src='http://tiny.cc/chrisprofilepic' height='50' width='50'>
+          <span id="userID" style="font-size:14px">&nbsp;Chris Hundhausen&nbsp;&nbsp;</span>
+        </div>
+    <!--END SIDE MENU TITLE-->
+    <!--BEGIN MAIN MENU CONTENT -->
+      <div id="mainMenuContent">
+      <!--BEGIN GROUP OF MODE/ACTION BUTTONS -->
+      <!--Mode buttons show current mode
+          Action buttons are contextual; they provide easy access to most important functionality in current mode -->
+        <a id= "" class="">Feed</a>
+        <a id= "" class="">Followed Users</a>
+       
+        <a id= "" class="">Rounds</a>
+        <a id= "" class="">Log New Round</a>
+        <a id= "" class="">Search Rounds</a>
+        <a id= "" class="">Sort Rounds</a>
+       
+        <a id= "" class="">Courses</a>
+        <a id= "" class="">Find Course</a>
+        <a id= "" class="" >Show All Courses</a>
+      <!-- END GROUP OF MODE/ACTION BUTTONS -->
+
+      <!-- BEGIN GROUP OF ALWAYS THERE BUTTONS -->       
+        <a class="" href="">Settings</a>
+        <a class="" href="">About SpeedScore</a>
+        <a class="">Account Profile</a>
+        <a class="" >Sign Out</a>
+      </div>
+      <!-- END GROUP OF ALWAYS THERE BUTTONS -->
+      <!-- END MAIN MENU CONTENT -->
+      </div>
+<!-- END SIDEMENU -->
+  </div>
+  <div id="theBottomBar" class="bottombar" style="z-index: 100">
+    <a class=""><span style="display:block; padding-top:3px" class=""></span><span style="display:block;font-size: small">Feed</span></a>
+    <a class=""><span style="display:block; padding-top:3px" class=""></span><span style="display:block;font-size: small">Rounds</span></a>
+    <a class=""><span style="display:block; padding-top:3px" class=""></span><span style="display:block;font-size: small">Courses</span></a> 
+  </div> 
+    
+  <!-- Single App page definitions go here. -->
+  <!-- Login page definition  -->
+  <div id="loginDiv" class="paddedPage">
+    <h1 align="center">Login Page</h1>
+    <center>
+    <h2>This page is under construction.</h2>
+    <img src="https://dl.dropboxusercontent.com/s/qpjhy9x9gwdxpob/SpeedScoreLogo64Trans.png" height="200" width="200">
+    <p style="font-style:italic">Version CptS 489 Demo<br>
+       &copy; 2017-19 The Professor of Speedgolf. All rights reserved.
+    </p>
+    </center>
+  </div>
+   <!-- Profile page for viewing and editing user settings -->
+   <div id="profileDiv"  class="paddedPage">
+    <h1 align="center">Profile Page</h1>
+    <center>
+    <h2>This page is under construction.</h2>
+    <img src="https://dl.dropboxusercontent.com/s/qpjhy9x9gwdxpob/SpeedScoreLogo64Trans.png" height="200" width="200">
+    <p style="font-style:italic">Version CptS 489 Demo<br>
+       &copy; 2017-19 The Professor of Speedgolf. All rights reserved.
+    </p>
+    </center>
+  </div>
+
+  <!-- Rounds page displaying the user's round history -->
+  <div id="roundsDiv" class="paddedPage">
+      <h1 align="center">Round History Page</h1>
+    <center>
+    <h2>This page is under construction.</h2>
+    <img src="https://dl.dropboxusercontent.com/s/qpjhy9x9gwdxpob/SpeedScoreLogo64Trans.png" height="200" width="200">
+    <p style="font-style:italic">Version CptS 489 Demo<br>
+       &copy; 2017-19 The Professor of Speedgolf. All rights reserved.
+    </p>
+    </center>
+  </div>
+
+  <!-- Page for logging a new round -->
+  <div id="logRoundDiv" class="paddedPage">
+      <h1 align="center">Log Round Page</h1>
+    <center>
+    <h2>This page is under construction.</h2>
+    <img src="https://dl.dropboxusercontent.com/s/qpjhy9x9gwdxpob/SpeedScoreLogo64Trans.png" height="200" width="200">
+    <p style="font-style:italic">Version CptS 489 Demo<br>
+       &copy; 2017-19 The Professor of Speedgolf. All rights reserved.
+    </p>
+   </center>
+  </div>
+
+   <!-- Page  for displaying and searching for courses -->
+   <div id="coursesDiv"  class="paddedPage">
+      <h1 align="center">Courses Page</h1>
+      <center>
+      <h2>This page is under construction.</h2>
+      <img src="https://dl.dropboxusercontent.com/s/qpjhy9x9gwdxpob/SpeedScoreLogo64Trans.png" height="200" width="200">
+      <p style="font-style:italic">Version CptS 489 Demo<br>
+         &copy; 2017-19 The Professor of Speedgolf. All rights reserved.
+      </p>
+      </center>
+   </div>
+  
+  <!-- Begin SCRIPT section of document. -->
+  <script>
+  //The following code hides all pages except for the login page.
+  document.getElementById("profileDiv").style.display = "none";
+  document.getElementById("roundsDiv").style.display = "none";
+  document.getElementById("coursesDiv").style.display = "none";
+  document.getElementById("logRoundDiv").style.display = "none";
+  </script>
+   
+</html>
